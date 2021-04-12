@@ -14,11 +14,11 @@ abstract class StudentDB : RoomDatabase() {
     private class PopulateDBAsyncTask(database: StudentDB?) : AsyncTask<Void?, Void?, Void?>() {
         private val studentDao: StudentDao
         protected override fun doInBackground(vararg params: Void?): Void? {
-            studentDao.insertStudent(StudentEntity("Abhishek", "0001", "LTTS-Android Studio"))
-            studentDao.insertStudent(StudentEntity("Jai", "0002", "LTTS-Android Studio"))
-            studentDao.insertStudent(StudentEntity("Vinayak", "0003", "LTTS-Android Studio"))
-            studentDao.insertStudent(StudentEntity("Roshan", "0004", "LTTS-Android Studio"))
-            studentDao.insertStudent(StudentEntity("Ansari", "0005", "LTTS-Android Studio"))
+            studentDao.insertStudent(StudentEntity("Vaibhav", "0001", "LTTS-Android Studio"))
+            studentDao.insertStudent(StudentEntity("Saujanya", "0002", "LTTS-Android Studio"))
+            studentDao.insertStudent(StudentEntity("Sarvesh", "0003", "LTTS-Android Studio"))
+            studentDao.insertStudent(StudentEntity("Ashu", "0004", "LTTS-Android Studio"))
+            studentDao.insertStudent(StudentEntity("Vishal", "0005", "LTTS-Android Studio"))
             return null
         }
 
